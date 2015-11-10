@@ -13,5 +13,6 @@ public class App
 		String a = scan.nextLine();
 		a = a.toUpperCase();
 		System.out.println(a);
+		scan.close();
     }
 }
