@@ -16,13 +16,23 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>App.java</mainClass>
+              <mainClass>de.gremmelmaier.App</mainClass>
             </manifest>
           </archive>
         </configuration>
       </plugin>
     </plugins>
   </build>
+  <reporting>
+  	 <plugins>
+  	  <plugin>
+      	<artifactId>maven-surefire-report-plugin</artifactId>
+      </plugin>
+      <plugin>
+     	 <artifactId>maven-javadoc-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </reporting>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
